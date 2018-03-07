@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 #include<stdio.h>
 #include<locale.h>
 #include<math.h>
@@ -6,19 +6,19 @@
 #include "Header.h"
 
 
-// Задание 1
+// Р—Р°РґР°РЅРёРµ 1
 double hypotenuse(double *x, double *y)
 {
 	return sqrt(*x**x + *y**y);
 }
 
-// Задание 2
+// Р—Р°РґР°РЅРёРµ 2
 double distance(double *x1, double *y1, double *x2, double *y2)
 {
 	return abs(sqrt(pow(*x1 - *x2, 2) + pow(*y1 - *y2, 2)));
 }
 
-// Задание 3
+// Р—Р°РґР°РЅРёРµ 3
 int overloadFuntcion(int x)
 {
 	return x * x;
@@ -39,35 +39,35 @@ float overloadFuntcion(float x, float y)
 	return x + y;
 }
 
-// Задание 4
+// Р—Р°РґР°РЅРёРµ 4
 void swap(int *a, int *b)
 {
 	int temp;
 	temp = *a;
 	*a = *b;
 	*b = temp;
-	printf("\nПосле выполнения программы:");
+	printf("\nРџРѕСЃР»Рµ РІС‹РїРѕР»РЅРµРЅРёСЏ РїСЂРѕРіСЂР°РјРјС‹:");
 	printf("\na=%d  b=%d\n", *a, *b);
 }
 
-// Задание 5
+// Р—Р°РґР°РЅРёРµ 5
 void swap(int &a, int &b)
 {
 	int temp;
 	temp = a;
 	a = b;
 	b = temp;
-	printf("\nПосле выполнения программы:");
+	printf("\nРџРѕСЃР»Рµ РІС‹РїРѕР»РЅРµРЅРёСЏ РїСЂРѕРіСЂР°РјРјС‹:");
 	printf("\na=%d  b=%d\n", a, b);
 }
 
-// Задание 6
+// Р—Р°РґР°РЅРёРµ 6
 int gcd(int x, int y)
 {
-	/*Программа представляет собой реализацию алгоритма Эвклида нахождения
-	наибольшего общего делителя для двух целых чисел.
-	Алгоритм основывается на факте, что НОД двух целых чисел x и y, когда
-	x>y, совпадает с НОД числа y и x по модулю y (остатка от деления x на y).*/
+	/*РџСЂРѕРіСЂР°РјРјР° РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ СЃРѕР±РѕР№ СЂРµР°Р»РёР·Р°С†РёСЋ Р°Р»РіРѕСЂРёС‚РјР° Р­РІРєР»РёРґР° РЅР°С…РѕР¶РґРµРЅРёСЏ
+	РЅР°РёР±РѕР»СЊС€РµРіРѕ РѕР±С‰РµРіРѕ РґРµР»РёС‚РµР»СЏ РґР»СЏ РґРІСѓС… С†РµР»С‹С… С‡РёСЃРµР».
+	РђР»РіРѕСЂРёС‚Рј РѕСЃРЅРѕРІС‹РІР°РµС‚СЃСЏ РЅР° С„Р°РєС‚Рµ, С‡С‚Рѕ РќРћР” РґРІСѓС… С†РµР»С‹С… С‡РёСЃРµР» x Рё y, РєРѕРіРґР°
+	x>y, СЃРѕРІРїР°РґР°РµС‚ СЃ РќРћР” С‡РёСЃР»Р° y Рё x РїРѕ РјРѕРґСѓР»СЋ y (РѕСЃС‚Р°С‚РєР° РѕС‚ РґРµР»РµРЅРёСЏ x РЅР° y).*/
 
 	/*if (y == 0) return x;
 	return gcd(y, x % y);*/
@@ -75,7 +75,7 @@ int gcd(int x, int y)
 	return y ? gcd(y, x % y) : x;
 }
 
-// Задание 7
+// Р—Р°РґР°РЅРёРµ 7
 void extremumNumbers(int *arr, int len)
 {
 	int min = *arr, max = *arr, indexMin = 0, indexMax = 0;
@@ -96,12 +96,12 @@ void extremumNumbers(int *arr, int len)
 	printf("\nmin[%d]=%d, max[%d]=%d\n", indexMin, min, indexMax, max);
 }
 
-// Задание 8
+// Р—Р°РґР°РЅРёРµ 8
 void arr(int *arr, int len, Arrange dir)
 {
 	arrangeArray(arr, len, dir);
 
-	printf("\nМассив после сортировки:\n");
+	printf("\nРњР°СЃСЃРёРІ РїРѕСЃР»Рµ СЃРѕСЂС‚РёСЂРѕРІРєРё:\n");
 
 	int k = 0, A[4][4];
 
@@ -118,7 +118,7 @@ void arr(int *arr, int len, Arrange dir)
 
 }
 
-// Задание 9
+// Р—Р°РґР°РЅРёРµ 9
 void evenness(int *arr, int len)
 {
 	int evenNumber = 0, oddNumber = 0;
@@ -127,8 +127,8 @@ void evenness(int *arr, int len)
 		if ((arr[i] % 2 == 0) || (arr[i] == 0)) evenNumber++;
 	}
 	oddNumber = len - evenNumber;
-	printf("\nКоличество четных элементов: %d\n", evenNumber);
-	printf("Количество нечетных элементов: %d\n", oddNumber);
+	printf("\nРљРѕР»РёС‡РµСЃС‚РІРѕ С‡РµС‚РЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ: %d\n", evenNumber);
+	printf("РљРѕР»РёС‡РµСЃС‚РІРѕ РЅРµС‡РµС‚РЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ: %d\n", oddNumber);
 }
 
 void fillArrayInteger(int * mas, int len, int *min, int *max)
@@ -139,7 +139,7 @@ void fillArrayInteger(int * mas, int len, int *min, int *max)
 
 void printArray(int * mas, int len)
 {
-	printf("\nИсходный массив:\n");
+	printf("\nРСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ:\n");
 	for (int i = 0; i < len; i++)
 		printf("A[%d]=%d  ", i, mas[i]);
 	printf("\n");
